@@ -1,0 +1,17 @@
+.heroSection {
+    background-color: #fff
+}
+
+.section2 {
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.section3 {
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+}

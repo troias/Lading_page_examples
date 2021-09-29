@@ -1,0 +1,11 @@
+.layout {
+  max-width: 120rem;
+  margin: 1rem;
+}
+
+.content {
+  border-bottom: black;
+  background-color: grey;
+  height: 20rem;
+  min-width: 20rem;
+}
