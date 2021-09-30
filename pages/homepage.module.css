@@ -1,17 +1,94 @@
-.heroSection {
-    background-color: #fff
+.heroContainer {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    margin-top: 0.5rem;
+   
+    justify-content: flex-start;
 }
 
+
+.heroContainerText {
+    margin-left: 0.5rem;
+    font-size: 1rem;
+}
 .section2 {
-    margin: 1rem auto;
+    margin: 0.5rem auto;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     background-color: #fff;
+   
 }
+
+.section2 div {
+  height: 100%;
+}
+
+.section2_examples_images {
+    display: flex;
+    max-height: 500px;
+}
+.section2_examples_images {
+    display: flex;
+   
+}
+
+.section2_examples_image {
+   
+    margin: 0.5rem;
+ }
+
+
+
 
 .section3 {
-    margin: 1rem auto;
+    margin: 0.5rem auto;
     display: flex;
+    width: 100%;
     justify-content: space-between;
     background-color: #fff;
 }
+
+.section4 {
+    margin: 0.5rem auto;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+
+
+@media (max-width: 375px) {
+    .section2 {
+        flex-direction: column;
+       
+    }
+}
+
+@media (min-width: 400px) {
+
+}
+@media (max-width: 500px) {
+
+}
+
+@media (min-width: 600px) {
+
+}
+
+
+@media (max-width: 768px) {
+
+}
+
+
+
+
+
+@media (min-width: 900px) {
+
+}
+
+

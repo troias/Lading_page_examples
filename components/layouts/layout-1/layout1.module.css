@@ -5,7 +5,7 @@
 
 .content {
   border-bottom: black;
-  background-color: grey;
-  height: 20rem;
+  background-color: rgb(218, 214, 214);
+  height: 100%;
   min-width: 20rem;
 }

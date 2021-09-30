@@ -1,7 +1,13 @@
 .content {
     margin: 1rem 1rem  auto;
-    background-color: #0070f3;
     margin-top: 1rem;
-
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
+@media (max-width: 500px) {
+    .content {
+        height: 100%;
+    }
+}

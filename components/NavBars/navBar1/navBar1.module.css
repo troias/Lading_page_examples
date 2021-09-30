@@ -1,9 +1,9 @@
 .navigation {
     width: 100%;
-   
     background-color: #0070f3;
     height: 5rem;
-    padding: 0 10%;
+    padding: 0 5%;
+    min-width: 320px
 }
 
 .header {
@@ -27,4 +27,26 @@
     height: 5rem;
     color: #fff;
    
+}
+
+@media (max-width: 500px) {
+    .navigation {
+        padding: 0;
+        width: 100%;
+    }
+    .navigation ul li{
+        visibility: hidden;
+    }
+    .navigation ul form{
+        visibility: hidden;
+    }
+    .navigation h2{
+        font-size: 1r;
+       
+     
+    }
+    .navigation span{
+        font-size: 2rem;
+        max-width: 5rem;
+    }
 }

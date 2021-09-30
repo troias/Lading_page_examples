@@ -1,7 +1,6 @@
 import React from "react";
 import classes from "./navBar1.module.css";
-import Image from 'next/image'
-import logo from '../../../public/search.svg'
+
 const NavBar1 = () => {
   return (
     <header className={classes.navigation}>
@@ -10,7 +9,7 @@ const NavBar1 = () => {
 
         <ul>
           <h2>
-            <span>Company name</span>
+            <span>name</span>
             <a href="#">
             </a>
           </h2>
