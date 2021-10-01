@@ -1,33 +1,85 @@
 .navigation {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     background-color: #0070f3;
     height: 5rem;
     padding: 0 5%;
-    min-width: 320px
-}
-
-.header {
-
-}
-
-.logo {
+    min-width: 320px;
+    z-index: 200;
+  
 
 }
 
-.search {
-
-    
+.mobileMenu {
+  display: flex;
+  align-items: center;
+  font-size: 2rem
 }
 
-.navigation ul{
+.mobileMenuDropdown {
+    position:fixed;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    padding-left: 0;
+    position: absolute;
+    background-color: #fff;
+    top: fixed;
+    height: 100%;
+    z-index: 200;
+    width: 70%;
+    border-right: black solid transparent;
+    
+   
+  
+}
+
+.mobileMenuDropdown a {
+    list-style: none;
+    color:black;
+    margin-bottom: 2rem;
+    margin-left: 0;
+   
+}
+
+
+
+.desktopMenu {
+    color: #fff
+}
+.brandTitle {
+    color:#fff
+}
+.hamburger {
+    color:#fff;
+  
+  
+}
+
+
+
+.navigationLinks{
+    display: flex;
+    justify-content: space-around;
     align-items: center;
     list-style: none;
     height: 5rem;
     color: #fff;
+    margin: 0;
    
 }
+
+.navigationLinks a{
+ padding: 1rem;
+   
+}
+
+.navigationLinks li:hover{
+    background-color: grey;
+   
+}
+
+
 
 @media (max-width: 500px) {
     .navigation {
@@ -36,6 +88,9 @@
     }
     .navigation ul li{
         visibility: hidden;
+    }
+    .navigation ul a{
+       
     }
     .navigation ul form{
         visibility: hidden;
@@ -48,5 +103,18 @@
     .navigation span{
         font-size: 2rem;
         max-width: 5rem;
+    }
+    .mobileMenu {
+        padding-left: 1rem;
+    }
+    .desktopMenu {
+        display: none;
+    }
+}
+
+@media (min-width: 500px) {
+
+    .mobileMenu {
+        display: none;
     }
 }
