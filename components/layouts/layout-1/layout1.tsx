@@ -11,18 +11,29 @@ const Layout1 = (props) => {
     console.log("active", active);
 
     return (
+
         <div className={classes.layout}>
-            <NavBar1 />
-            <Backdrop/>
+         
+           
+                <NavBar1 />
+        
+           
+           
+
+
 
             <main className={classes.content}>
+
+
                 {props.children}
             </main>
 
 
 
             {/* <Footer1 /> */}
+
         </div>
+
     );
 };
 

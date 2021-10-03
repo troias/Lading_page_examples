@@ -1,37 +1,43 @@
 .navigation {
     display: flex;
-    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    justify-content: center;
     width: 100%;
     background-color: #0070f3;
     height: 5rem;
     padding: 0 5%;
     min-width: 320px;
     z-index: 200;
-  
+
 
 }
 
 .mobileMenu {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   font-size: 2rem
+  
 }
 
+
 .mobileMenuDropdown {
+  
     position:fixed;
+    left: 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
-    padding-left: 0;
-    position: absolute;
+    padding-left: 0.5rem;
+    
     background-color: #fff;
-    top: fixed;
+   
     height: 100%;
-    z-index: 200;
+    z-index: 500;
     width: 70%;
     border-right: black solid transparent;
-    
-   
-  
+    animation-name: mobileMenuDropdown;
+    animation-duration: 500ms;
 }
 
 .mobileMenuDropdown a {
@@ -42,7 +48,19 @@
    
 }
 
+.mobileCloseBtn {
+   margin-left: 35px; 
+   margin-top:20px;
+   animation-name: mobileMenuCloseBtnAnimation;
+    animation-duration: 250ms;
+}
 
+.mobileLinks {
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
 
 .desktopMenu {
     color: #fff
@@ -52,8 +70,8 @@
 }
 .hamburger {
     color:#fff;
-  
-  
+    z-index: 400;
+    align-self: center;
 }
 
 
@@ -117,4 +135,20 @@
     .mobileMenu {
         display: none;
     }
+}
+
+@keyframes mobileMenuDropdown{
+  
+        0%   {background-color: red;}
+        25%  {background-color: yellow;}
+ 
+}
+
+@keyframes mobileMenuCloseBtnAnimation{
+  
+    0%   {visibility: hidden;}
+    25% {visibility: hidden;}
+    50% {visibility: hidden;}
+    75% {visibility: visible;}
+
 }

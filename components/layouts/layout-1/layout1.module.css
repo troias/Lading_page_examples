@@ -1,6 +1,6 @@
 .layout {
   max-width: 120rem;
-  margin: 1rem;
+  margin-top: 0;
 }
 
 .content {
@@ -8,4 +8,6 @@
   background-color: #fff;
   height: 100%;
   min-width: 20rem;
+  
 }
+

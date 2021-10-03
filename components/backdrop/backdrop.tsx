@@ -1,9 +1,12 @@
 import classes from "./backdrop.module.css"
+import {useContext} from 'react'
+import {ContextStore} from '../../contextStore/contextStore'
 
 const Backdrop = (props) => {
+  const {active} = useContext(ContextStore)
     return(
-      <div className={classes.backdrop}>
-          {props.children}
+      <div className={active && classes.backdrop}>
+        {props.children}
       </div>
     )
   }

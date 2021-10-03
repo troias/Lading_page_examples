@@ -1,10 +1,12 @@
 .backdrop {
-    position: fixed;
+   position: fixed;
     z-index: 100;
-    padding: 0px;
+
     height: 100%;
     width: 100%;
-    top: 1;
     left: 0;
+    top: 0;
      background: rgba(0, 0, 0, 0.75);
+     margin-top: 0px;
+     padding-top: 0px;
   }

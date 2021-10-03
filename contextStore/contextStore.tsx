@@ -1,23 +1,37 @@
+import { type } from 'os'
 import React, {useState} from 'react'
 
+type ContextObj = {
+    activeHandler: () => void;
+    closeBackdrop: () => void;
+    active: boolean;
+} 
 
-export const ContextStore = React.createContext({
+export const ContextStore = React.createContext<ContextObj>({
     activeHandler: () => {},
-    active: false
+    closeBackdrop: () => {},
+    active: false,
 })
 
  const ContextStoreProvider = (props) => {
 
     const [active, setActive] = useState(false)
 
-    const menuActiveHandler = () => {
+    const activeHandler = () => {
         setActive(prevState => !prevState)
     }
 
-     const defaultContextStore = {
-        activeHandler: menuActiveHandler, 
-        active: active,
+    const closeBackdrop = () => {
+        setActive(false)
+    }
+  
+     const defaultContextStore: ContextObj = {
+        activeHandler,
+        closeBackdrop,
+        active,
      }
+
+     
 
     return (
         <ContextStore.Provider value={defaultContextStore}>
