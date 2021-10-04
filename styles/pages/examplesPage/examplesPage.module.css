@@ -1,0 +1,26 @@
+.examplesContainer {
+    margin-top: 7rem;
+    display: flex;
+    justify-content: center;
+}
+
+.images {
+    
+}
+
+
+
+
+@media (max-width: 350px) {
+    .examplesContainer{
+        grid-template-columns: 1;
+    }
+
+  
+
+    .imgList  {
+        display: flex;
+        flex-direction: column;
+    }
+     
+}
