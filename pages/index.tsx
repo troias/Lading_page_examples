@@ -15,13 +15,11 @@ const Home = () => {
   
     
 <HomepageLayout>
-  
-    <div className={classes.homepageContent}>
+ 
 
    
 
         <div className={classes.heroSection}>
-
 
           <div className={classes.heroContainer}>
             <div className={classes.heroContainerText}>
@@ -37,7 +35,7 @@ const Home = () => {
         </div>
 
         <div className={classes.section2}>
-          <div >
+          <div  className={classes.heroImageContainer} >
             <Image className={classes.heroImage} src={heroImage} alt="picutre of coffee cup" />
             <button className={classes.heroBtn}>See my Work <FaEye className={classes.btnIcon} /></button>
           </div>
@@ -66,15 +64,18 @@ const Home = () => {
 
           <h3>Take the best path forward</h3>
           <FaBeer />
-          <h4>Start and online business</h4>
+          <h4>Start an online business</h4>
           <p>Create a business, whether you have a fresh idea or are looking for a new way to make money</p>
           <FaBeer />
           <h4>Move your business online</h4>
           <p>Turn your retail sotre into an online sotre and keep serving customers without missing a beat</p>
+          <FaBeer />
+          <h4>Use new tec stacks</h4>
+          <p>Use modern JavaScript libaries and frameworks</p>
         </div>
         <div className={classes.section4}>
         </div>
-        </div>
+  
         </HomepageLayout>
    
   );

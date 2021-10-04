@@ -1,7 +1,8 @@
 
-  .homepageContent {
-      z-index: 1;
-  }
+.heroSection {
+margin-top: 4rem;
+}
+
 .heroContainer {
     display: flex;
     background-color: white;
@@ -12,8 +13,11 @@
     z-index: 1;
     
 }
-.heroContainerText {
-    z-index: 1;
+.heroImageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .heroImage {
@@ -22,16 +26,17 @@
 }
 .heroBtn {
     position: absolute;
+    box-sizing: border-box;
     display: flex;
     font-size: 1rem;
-    top: 60%;
-   left: 60%;
-   margin-left: -100px;
-   background-color: #0070f3;
-   color: #fff;
+    border: none;
+    padding: 15px 32px;
+    margin-left: -100px;
+    background-color: #0070f3;
+    color: #fff;
    align-items: center;
-   border-radius: 8%;
-   
+   border-radius: 5%;
+   font-size: 16px;
 }
 
 .btnIcon {
@@ -69,10 +74,11 @@
     display: flex;
     flex-direction: column;
     margin: 0.5rem auto;
+    padding: 0.5rem 0.5rem;
     display: flex;
     width: 100%;
     justify-content: space-between;
-    background-color: #fff;
+    background-color: rgb(216, 216, 216);
 }
 
 .section4 {

@@ -50,13 +50,15 @@ const NavBar1 = () => {
             <div className={classes.mobileLinks}>
 
            
-            <Link href="#">Home</Link>
+            <Link href="/">Home</Link>
 
 
-            <Link href="#">About</Link>
+            <Link href="/about">About</Link>
 
 
-            <Link href="#">Contact</Link>
+            <Link href="/contact">Contact</Link>
+
+            <Link href="/examples">Examples</Link>
             </div>
 
           </ul>
@@ -73,14 +75,16 @@ const NavBar1 = () => {
         <ul className={classes.navigationLinks}>
 
           <li>
-            <Link href="#" >Home</Link>
+            <Link href="/" >Home</Link>
           </li>
           <li>
-            <Link href="#">About</Link>
+            <Link href="/examples">Examples</Link>
           </li>
           <li>
-            <Link href="#">Contact</Link>
+            <Link href="/contact">Contact</Link>
           </li>
+
+          
 
 
 

@@ -97,7 +97,12 @@
    
 }
 
-
+@media (max-width: 340px) {
+    .mobileMenu {
+       margin-left:1.5rem;
+      
+    }
+}
 
 @media (max-width: 500px) {
     .navigation {
@@ -124,6 +129,7 @@
     }
     .mobileMenu {
         padding-left: 1rem;
+        font-size:2.5rem;
     }
     .desktopMenu {
         display: none;
@@ -131,7 +137,9 @@
 }
 
 @media (min-width: 500px) {
-
+    .navigation {
+        justify-content: space-between;
+    }
     .mobileMenu {
         display: none;
     }
