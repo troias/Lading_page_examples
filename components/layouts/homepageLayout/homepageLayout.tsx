@@ -6,7 +6,6 @@ import classes from './homepageLayoutStyle.module.css'
     
     return (
         <div className={classes.content}>
-      
            {props.children} 
         </div>
     )

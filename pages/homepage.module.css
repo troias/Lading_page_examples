@@ -57,7 +57,7 @@ margin-top: 4rem;
 
 .section2_examples_images {
     display: flex;
-    align-items: center;
+    justify-content: center;
     flex-direction: row;
 }
 
@@ -65,19 +65,22 @@ margin-top: 4rem;
 .section2_examples_image {
    
     margin: 0.5rem;
+    display: flex;
+    justify-content: center;
  }
 
 
-
+.section2_call:hover {
+  font-size: 20px;
+}
 
 .section3 {
     display: flex;
     flex-direction: column;
     margin: 0.5rem auto;
     padding: 0.5rem 0.5rem;
-    display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
     background-color: rgb(216, 216, 216);
 }
 
@@ -94,5 +97,4 @@ margin-top: 4rem;
      flex-direction: column;
  }
 }
-
 
